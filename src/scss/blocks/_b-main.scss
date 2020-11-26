@@ -1,0 +1,50 @@
+.b-main {
+    background: url(../images/b-main-bg.jpg) no-repeat;
+    background-position: center;
+    // overflow: hidden;
+    
+    &__cnt {
+        color: white;
+        flex-direction: column;
+        padding-top: 180px;
+        padding-bottom: 295px;
+        position: relative;
+        z-index: 2;
+        // position: relative;
+        
+        &::before{
+            content: '';
+            background-color: rgba(0,0,0, 0.45);
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 50vw;
+            
+            left: 0;
+            top: 0;
+            // transform: skewX(22deg) ;
+            transform: skewX(22deg) translateX( calc( -100% + 462px ) ) ;
+            z-index: -1;
+        }
+    }
+
+    &__offer {}
+
+    &__desc {
+        margin-top: 45px;
+        font-size: 1.5em;
+    }
+
+    &__actions {
+        display: flex;
+        margin-top: 95px;
+    }
+    &__action{
+        &_begin{
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &__video {}
+}

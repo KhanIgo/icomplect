@@ -1,0 +1,113 @@
+.b-starting {
+    background: $cGrey url(../../images/b-starting-bg.png) no-repeat;
+    background-position: center bottom;
+    // background-size: 100%;
+
+    &__cnt {
+        padding-top: 110px;
+        padding-bottom: 155px;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {}
+
+    &__toggles {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 85px;
+        // margin-right: auto;
+    }
+
+    &__offer {
+        font-weight: 700;
+        margin-left: auto;
+    }
+
+
+    &__toggle {
+        text-decoration: none;
+        color: $cBlue;
+        // font-size: 1.5em;
+        padding: 20px 28px; 
+        text-align: center;
+        margin: 0 10px;
+        &.is-active{
+            border-bottom: 3px solid currentColor;
+        }
+        &_seller {}
+        &_customer {}
+    }
+
+    &__body {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+
+    &__steps {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_seller {}
+
+        &_customer {}
+    }
+
+
+    &-step {
+        position: relative;
+        width: 25%;
+        height: 360px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px 20px 55px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border: solid 1px $cGrey;
+        margin-left: -1px;
+        z-index: 1;
+        will-change: color, background-color;
+        
+        transition: 500ms ease-out;
+
+
+        @media (max-width: 1440px){
+            height: 25vw;
+        }
+
+        &__title {
+            font-size: 2em;
+            font-weight: 200;
+            color: #878787;
+        }
+
+        &__desc {
+            margin-top: 30px;
+            font-size: 1.125em;
+        }
+
+        &:hover{
+            z-index: 2;
+            transition: 500ms ease-in;
+            border-color: $cBlue;
+            background-color: $cBlue;
+            color: white;
+            span{
+                color: inherit !important;
+            }
+        }
+    }
+}
+
+
+  

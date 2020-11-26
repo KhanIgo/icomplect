@@ -1,0 +1,20 @@
+.b-media {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 47px;
+
+    &__icon {
+    }
+    &__title {
+        font-weight: 600;
+        margin-top: 35px;
+        min-height: 2em;
+    }
+    &__desc {
+        margin-top: 15px;
+        color: rgb(60, 60, 60);
+    }
+}
+
+
+

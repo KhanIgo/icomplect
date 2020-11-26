@@ -1,0 +1,15 @@
+.icon{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+
+    &_address{
+        // background-image:  url(../../images/icon-address.png);
+        @include mask-icon('../../images/icon-address.png');
+    }
+    &_phone{
+        // background-image:  url(../../images/icon-address.png);
+        @include mask-icon('../../images/icon-phone.png');
+    }
+}
