@@ -90,7 +90,7 @@
             &:after{
                 background-color: white;
                 @include mask('../../images/play-arc.svg');
-                @include mask-size('100% 100%');
+                @include mask-size(contain);
                 @include mask-pos(left);
                 @include mask-rep(no-repeat);
                 width: 5.9em;
@@ -103,6 +103,13 @@
         
         &:hover{
             transform: scale(0.9);
+        }
+
+        @media (max-width: 1000px){
+            font-size: 0.8em;
+        }
+        @media (max-width: 700px){
+            font-size: 0.5em;
         }
     }
 

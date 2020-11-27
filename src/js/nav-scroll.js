@@ -20,6 +20,8 @@ jquery(function ($) {
         }
 
         $(this).closest('li').addClass('is-active').siblings('li').removeClass('is-active');
+        $(this).closest('.b-nav').removeClass('is-active');
+        
     });
 
 });
