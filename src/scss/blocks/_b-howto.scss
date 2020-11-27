@@ -23,6 +23,7 @@
         color: black;
         padding: 35px 20px 45px 47px;
         transition: 350ms ease-out;
+        position: relative;
 
         // @include showBorder;
 
@@ -48,6 +49,24 @@
 
             background-color: $cBlue;
             transition: 350ms ease-in;
+            &:before{ opacity: 1; }
+        }
+
+        &:before{
+            opacity: 0;
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: white;
+            width: 13px;
+            height: 13px;
+            transform: rotate(90deg);
+            @include mask('../../images/triangle.svg');
+            @include mask-size(contain);
+            @include mask-pos(left);
+            @include mask-rep(no-repeat);    
+            transition: inherit; 
         }
     }
 

@@ -1,0 +1,15 @@
+
+  .b-video {
+      display: flex;
+      align-items: center;
+    &__desc {
+        @extend .songer;
+        font-size: 0.875em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-right: 2.5em;
+    }
+    &__button {
+      
+    }
+  }

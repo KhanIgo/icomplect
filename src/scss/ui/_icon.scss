@@ -12,4 +12,11 @@
         // background-image:  url(../../images/icon-address.png);
         @include mask-icon('../../images/icon-phone.png');
     }
+
+    &_play{
+        width: 21px;
+        height: 25px;
+        background-color: white;
+        @include mask-icon('../../images/icon-play.png');
+    }
 }

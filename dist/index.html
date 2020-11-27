@@ -17,13 +17,13 @@
         <nav class="b-header__nav b-nav">
             <ul class="b-nav__list">
                 <li class="b-nav__item">
-                    <a href="" class="b-nav__link"><span>Как начать работать</span></a>
-                </li>
-                <li class="b-nav__item is-active">
-                    <a href="" class="b-nav__link"><span>Как работать с сайтом</span></a>
+                    <a href="#starting" class="b-nav__link js-nav-link"><span>Как начать работать</span></a>
                 </li>
                 <li class="b-nav__item">
-                    <a href="" class="b-nav__link"><span>Контакты</span></a>
+                    <a href="#how-to" class="b-nav__link js-nav-link"><span>Как работать с сайтом</span></a>
+                </li>
+                <li class="b-nav__item">
+                    <a href="#contacts" class="b-nav__link js-nav-link"><span>Контакты</span></a>
                 </li>
             </ul>
         </nav>
@@ -51,9 +51,12 @@
             <a href="#" class="b-main__action_begin ui-btn ui-btn_primary ui-btn_huge songer">Начать использовать</a>
             <div class="b-main__action_video b-main__video">
                 <div class="b-video">
-                    <span class="b-video__desc"></span>
-                    <button class="b-video__button ui-btn ui-btn__play"></button>
-                </div>
+    <span class="b-video__desc">Смотреть видео <br>об ICOMPLECT</span>
+    <button class="b-video__button ui-btn ui-btn_play">
+        <span class="rounds"></span>
+        <i class="icon icon_play"></i>
+    </button>
+</div>
             </div>
         </div>
     </div>
@@ -93,7 +96,7 @@
     </div>
 </section>
 
-  <section class="b-starting row">
+  <section class="b-starting row" id="starting">
     <div class="b-starting__cnt cnt">
         <div class="b-starting__header">
             <h2 class="b-starting__title">Как начать работать?</h2>
@@ -110,6 +113,7 @@
                 <a href="#" class="b-starting-step b-starting-step_1">
                     <span class="b-starting-step__title">Шаг 01</span>
                     <span class="b-starting-step__desc">Зарегистрировать <br>учетную запись</span>
+                    <img class="b-starting-step__img" src="images/b-starting-step_key.png" />
                 </a>
                 <a href="#" class="b-starting-step b-starting-step_2">
                     <span class="b-starting-step__title">Шаг 02</span>
@@ -129,7 +133,7 @@
         </div>
     </div>
 </section>
-  <section class="b-howto row">
+  <section class="b-howto row" id="how-to">
     <div class="b-howto__cnt cnt">
         <h2 class="b-howto__title">Как работать с маркетплейсом? </h2>
 
@@ -173,7 +177,7 @@
         </div>
     </div>
 </section>
-  <section class="b-contacts">
+  <section class="b-contacts" id="contacts">
     <div class="b-contacts__cnt cnt">
         <div class="b-contacts__header">
             <h2 class="b-contacts__title">Контакты</h2>

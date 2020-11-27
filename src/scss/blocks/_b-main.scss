@@ -37,7 +37,11 @@
 
     &__actions {
         display: flex;
+        width: 100%;
+        max-width: 1300px;
+        justify-content: space-between;
         margin-top: 95px;
+        align-items: center;
     }
     &__action{
         &_begin{

@@ -78,6 +78,13 @@
     }
 
     &-footer-link {
+        opacity: 0.5;
+        transition: 350ms ease-in-out;
+        will-change: opacity transform;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.02);
+        }
 
         &_policy {
             // margin-right: auto;
@@ -87,6 +94,10 @@
 
         &_copyright {
             // margin-left: auto;
+            &:hover{
+                opacity: 0.5;
+                transform: scale(1);
+            }
         }
     }
 

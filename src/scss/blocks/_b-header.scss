@@ -86,10 +86,11 @@
     text-decoration: none;
     transform: skewX($skewX);
     padding: 0 47px;
+    transition: 350ms ease-in-out;
+    will-change: color background-color;
     >span{
       transform: skewX(-$skewX);
     }
-
     @media (max-width: 1450px){
       padding: 0 20px;
     }
@@ -110,11 +111,18 @@
     &_catalog {
       background-color: $cBlue;
       color: white;
+      &:hover{
+        background-color: #143b9e;
+      }
     }
     &_lk {
       background-color: white;
       color: $cBlue;
       margin-right: -30px;
+      &:hover{
+        background-color: $cBlue;
+        color: white;
+      }
     }
   }
 

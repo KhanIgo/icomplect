@@ -45,7 +45,7 @@
         position: relative;
         transition: 350ms ease-in;
         padding: 0 32px;
-        &.is-active{
+        &:hover, &.is-active{
             color: $cBlue;
             a{
                 border-bottom: solid 4px $cBlue;
@@ -67,6 +67,7 @@
         color: inherit;
         display: flex;
         align-items: center;
+        transition: inherit;
         @media (max-width: 780px){
             padding-bottom: 7px;
             // height: auto;

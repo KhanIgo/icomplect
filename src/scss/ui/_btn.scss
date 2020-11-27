@@ -10,9 +10,9 @@
     
     text-transform: uppercase;
     
-    @media (max-width: $tabWidth){
-        font-size: 0.9em;
-    }
+    // @media (max-width: $tabWidth){
+    //     font-size: 0.9em;
+    // }
     
     &_red, &_secondary{
         background-color: $cSecondary;
@@ -29,11 +29,83 @@
         background-image: -ms-linear-gradient( 90deg, rgb(252,160,29) 0%, rgb(253,188,58) 100%);
         box-shadow: 0px 2px 0px 0px rgba(156, 120, 65, 0.004),2.071px 7.727px 15px 0px rgba(33, 21, 8, 0.2),4.918px 18.353px 69px 0px rgba(120, 82, 43, 0.7);
         transition: 350ms ease-in-out;
+
+
+        &:hover{
+            background-image: -moz-linear-gradient( 90deg, rgb(255,179,71) 0%, rgb(255,215,134) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgb(255,179,71) 0%, rgb(255,215,134) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgb(255,179,71) 0%, rgb(255,215,134) 100%);
+            box-shadow: 0px 2px 0px 0px rgba(156, 120, 65, 0.004),2.071px 7.727px 15px 0px rgba(33, 21, 8, 0.2),4.918px 18.353px 69px 0px rgba(120, 82, 43, 0.7);
+        }
     }
     &_blue-border{
         color: $cBlue;
         border: solid 1px currentColor;
+        transition: 350ms ease-in-out;
+        &:hover{
+            background-color: $cBlue;
+            color: white;
+        }
     }
+
+    &_play{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        width: 6.4em;
+        height: 6.4em;
+        color: $cOrange;
+        background-color: currentColor;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 3em;
+        margin-right: 3em;
+        transition: 350ms ease-in-out;
+
+        .rounds{
+            position: absolute;
+            // left: 0;
+            // top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: transparentize($cOrange, 0.83);
+            position: absolute;
+            width: 9.2em;
+            height: 9.2em;
+
+            &:before, &:after{
+                content: '';
+                position: absolute;
+            }
+            &:before{
+                border-radius: 50%;
+                width: 11.8em;
+                height: 11.8em;
+                background-color: transparentize($cOrange, 0.83);
+                left: -1.3em;
+                top: -1.3em;
+            }
+            &:after{
+                background-color: white;
+                @include mask('../../images/play-arc.svg');
+                @include mask-size('100% 100%');
+                @include mask-pos(left);
+                @include mask-rep(no-repeat);
+                width: 5.9em;
+                height: 11.8em;
+                left: -1.3em;
+                top: -1.3em;
+                z-index: -1;
+            }
+        }
+        
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+
     &_close{
         // 
         // display: block;
@@ -66,3 +138,16 @@
 }
 
 
+
+
+
+// .Прямоугольник_1_копия_4 {
+    
+//     position: absolute;
+//     left: 240px;
+//     top: 569px;
+//     width: 365px;
+//     height: 90px;
+//     z-index: 125;
+//   }
+  

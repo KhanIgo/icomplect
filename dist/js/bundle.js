@@ -175,7 +175,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\n__webpack_require__(/*! ./ham.js */ \"./src/js/ham.js\");\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(function ($) {\n  console.log(window.innerWidth);\n  var winW = window.innerWidth;\n\n  if (winW < 1450) {\n    var scale = winW / 1450;\n    var transform = 'scale(' + scale + ')';\n    console.log('transform', transform); // $('body').css('transform', transform);\n    // $('body').css('zoom', scale);\n  }\n}); // window.jQuery = jquery;\n// window.$ = jquery;\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\n__webpack_require__(/*! ./ham */ \"./src/js/ham.js\");\n\n__webpack_require__(/*! ./nav-scroll */ \"./src/js/nav-scroll.js\"); // window.jQuery = jquery;\n// window.$ = jquery;\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/nav-scroll.js":
+/*!******************************!*\
+  !*** ./src/js/nav-scroll.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(function ($) {\n  $(\"a.js-nav-link\").click(function (e) {\n    e.preventDefault();\n\n    if (location.pathname.replace(/^\\//, \"\") == this.pathname.replace(/^\\//, \"\") && location.hostname == this.hostname) {\n      var target = $(this.hash);\n      target = target.length ? target : $(\"[name=\" + this.hash.slice(1) + \"]\");\n\n      if (target.length) {\n        $(\"html,body\").animate({\n          scrollTop: target.offset().top\n        }, 1000);\n      }\n    }\n\n    $(this).closest('li').addClass('is-active').siblings('li').removeClass('is-active');\n  });\n});\n\n//# sourceURL=webpack:///./src/js/nav-scroll.js?");
 
 /***/ }),
 
