@@ -63,8 +63,6 @@
         }
         @media (max-width: 1000px){
             margin-left: 13px;
-        }
-        @media (max-width: 800px){
             width: 100%;
             font-size: 1em;
             i{
@@ -82,7 +80,7 @@
         margin-left: auto;
         font-size: 0.87em;
         font-weight: 30;
-        @media (max-width: 800px){
+        @media (max-width: 1000px){
             margin-top: 15px;
             margin-left: 0;
             font-size: 0.9em;
