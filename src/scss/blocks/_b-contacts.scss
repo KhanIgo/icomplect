@@ -5,8 +5,6 @@
     color: white;
 
 
-
-
     // margin-bottom: 10000px;
 
     a{
@@ -16,18 +14,23 @@
     &__cnt {
         padding-top: 80px;
         padding-bottom: 35px;
+
     }
 
     &__header {
         width: 100%;
         display: flex;
-        // justify-content: space-between;
         
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     &__title {
         transform: translateY(-14px);
+        @media (max-width: 1200px){
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__address {
@@ -37,6 +40,15 @@
             position: absolute;
             font-size: 1.3em;
             transform: translate(-155%, 0);
+        }
+        @media (max-width: 1200px){
+            margin-left: 30px;
+        }
+        @media (max-width: 1000px){
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+            margin-left: 25px;
         }
     }
 
@@ -49,6 +61,17 @@
             width: 0.7em;
             transform: translate(-90%, 4px);
         }
+        @media (max-width: 1000px){
+            margin-left: 13px;
+        }
+        @media (max-width: 800px){
+            width: 100%;
+            font-size: 1em;
+            i{
+                transform: scale(1.15) translate(-90%, 2px);
+            }
+        }
+        
     }
 
     &__requisites {
@@ -59,12 +82,21 @@
         margin-left: auto;
         font-size: 0.87em;
         font-weight: 30;
+        @media (max-width: 800px){
+            margin-top: 15px;
+            margin-left: 0;
+            font-size: 0.9em;
+        }
     }
 
     &__map {
         margin-top: 55px;
         img {
             width: 100%;
+        }
+
+        @media (max-width: 800px){
+            margin-top: 40px;
         }
     }
 
@@ -74,7 +106,10 @@
         display: flex;
         justify-content: space-between;
 
-        // justify-content: center;
+        @media (max-width: 800px){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &-footer-link {
@@ -84,6 +119,9 @@
         &:hover{
             opacity: 1;
             transform: scale(1.02);
+        }
+        @media (max-width: 800px){
+            margin: 5px 0;
         }
 
         &_policy {
