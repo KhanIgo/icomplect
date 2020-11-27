@@ -6,27 +6,67 @@
     &__cnt {
         padding-top: 110px;
         padding-bottom: 155px;
+        
+        @media (max-width: 1000px){
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+        @media (max-width: 500px){
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
     }
 
     &__header {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         // justify-content: space-between;
         align-items: center;
     }
 
-    &__title {}
+    &__title {
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: center;
+        }
+    }
 
     &__toggles {
         text-transform: uppercase;
         font-weight: 600;
         margin-left: 85px;
+        
+        @media (max-width: 1450px){
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 1280px){
+            width: 100%;
+            order: 3;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        @media (max-width: 600px){
+            margin-top: 30px;
+        }
+        
         // margin-right: auto;
     }
 
     &__offer {
         font-weight: 700;
         margin-left: auto;
+        @media (max-width: 1350px){
+            font-size: 0.8em;
+        }
+        @media (max-width: 600px){
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 30px;
+        }
     }
 
 
@@ -42,11 +82,19 @@
         }
         &_seller {}
         &_customer {}
+
+        @media (max-width: 500px){
+            font-size: 0.7em;
+            padding: 5px; 
+        }
     }
 
     &__body {
         width: 100%;
         margin-top: 60px;
+        @media (max-width: 600px){
+            margin-top: 40px;
+        }
     }
 
 
@@ -78,6 +126,29 @@
         z-index: 1;
         will-change: color, background-color;
         transition: 500ms ease-out;
+        
+        @media (max-width: 1400px){
+            height: calc( 25vw - 7px );
+            padding: 50px 20px 20px 40px ;
+        }
+        @media (max-width: 1000px){
+            height: calc( 25vw - 7px );
+            padding: 50px 20px 20px 20px ;
+        }
+        @media (max-width: 850px){
+            width: 35%;
+            height: calc( (50vw - 15px) * 0.7 );
+            padding: 50px 20px 20px 20px ;
+        }
+        @media (max-width: 700px){
+            width: 40%;
+            height: calc( (50vw - 15px) * 0.8 );
+        }
+        @media (max-width: 500px){
+            width: 260px;
+            height: 220px;
+            padding: 40px 20px 20px 20px ;
+        }
 
         &_1{
             background-repeat: no-repeat;
@@ -95,16 +166,20 @@
             width: 30px;
             height: 30px;
             @include mask('../../images/triangle.svg');
-            @include mask-size('100% 100%');
+            @include mask-size(contain);
             @include mask-pos(left);
             @include mask-rep(no-repeat);    
-            transition: inherit;        
+            transition: inherit;    
+            @media (max-width: 500px){
+                width: 20px;
+                height: 20px;
+                left: 10px;
+                top: 10px;
+            }    
         }
 
 
-        @media (max-width: 1440px){
-            height: 25vw;
-        }
+        
 
         &__title {
             font-size: 2em;
@@ -112,6 +187,9 @@
             color: #878787;
             position: relative;
             z-index: 2;
+            @media (max-width: 1000px){
+                font-size: 1.5em; 
+            }
         }
 
         &__desc {
@@ -119,9 +197,15 @@
             font-size: 1.125em;
             position: relative;
             z-index: 2;
+            @media (max-width: 1000px){ 
+                font-size: 1em; 
+                margin-top: 1px;
+            }
         }
         &__img{
             position: absolute;
+            max-height: 80%;
+            max-width: 100%;
             right: 0;
             z-index: 1;
             top: 50%;
