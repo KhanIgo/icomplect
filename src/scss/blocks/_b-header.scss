@@ -1,6 +1,6 @@
 .b-header {
   position: relative;
-  // background-color: $cG;
+  
   &:after{
     content: '';
     position: absolute;
@@ -10,15 +10,32 @@
     right: 0;
     top: 0;
     z-index: -1;
+    @media (max-width: 780px){ display: none; }
   }
+
+  @media (max-width: 780px){
+     position: fixed;
+     z-index: 5;
+     background-color: white;
+  }
+
+
   &__cnt {
     align-items: stretch;
-    // @include showBorder;
   }
 
   &__logo-link {
     padding: 25px 0;
     margin-right: 55px;
+    @media (max-width: 1450px){
+      margin-right: 15px;
+    }
+    @media (max-width: 780px){
+      margin: 0 auto;
+      padding: 15px 0;
+    }
+    
+
   }
   &__logo{
     display: block;
@@ -27,7 +44,6 @@
   &__nav{
     background-color: $cGrey;
     flex-grow: 1;
-    justify-content: center;
   }
 
   &__logo {}
@@ -39,6 +55,29 @@
     font-size: 0.875em;
     font-weight: 600;
     letter-spacing: 0.05em;
+    transition: 350ms ease-in-out;
+    z-index: 5;
+
+    @media (max-width: 1150px) and (min-width: 780px){ 
+      position: fixed;
+      display: flex;
+      right: -3%;
+      top: 79px;
+      flex-direction: column;
+      transform: skewX($skewX) translateX(100%);
+      &.is-active{ transform: skewX($skewX) translateX(0); }
+    }
+    @media (max-width: 780px){
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      top: auto;
+      right: auto;
+      width: calc( 100% - 70px);
+      border-right: solid 1px $cBlue;
+    }
+    
+    
   }
 
   &__link{
@@ -50,6 +89,24 @@
     >span{
       transform: skewX(-$skewX);
     }
+
+    @media (max-width: 1450px){
+      padding: 0 20px;
+    }
+    @media (max-width: 1150px){
+      transform: skewX(0);
+      padding: 20px 40px;
+      >span{ transform: skewX(-$skewX); }
+    }
+    @media (max-width: 780px){
+      width: 50%;
+      padding: 10px;
+      height: 50px;
+      text-align: center;
+      justify-content: center;
+      >span{ transform: skewX(0); }
+    }
+
     &_catalog {
       background-color: $cBlue;
       color: white;
@@ -62,6 +119,23 @@
   }
 
   
+  &__ham{
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    justify-content: center;
+    @media (min-width: 1150px){
+      display: none;
+    }
+    @media (max-width: 780px){
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      height: 50px;
+      width: 70px;
+      background-color: #fff;
+    }
+  }
 }
 
 
