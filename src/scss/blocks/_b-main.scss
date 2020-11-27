@@ -34,6 +34,10 @@
             // transform: skewX(22deg) ;
             transform: skewX(22deg) translateX( calc( -100% + 462px ) ) ;
             z-index: -1;
+
+            @media (max-width: 800px){
+                display: none;
+            }
         }
     }
 
