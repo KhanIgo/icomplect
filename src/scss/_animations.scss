@@ -24,3 +24,20 @@
 
 
 
+@keyframes tab-in{
+  1%{
+    display: block;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes tab-out{
+  99% {
+    opacity: 0;
+  }
+  100%{
+    display: none;
+  }
+}
