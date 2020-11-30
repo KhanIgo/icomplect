@@ -220,7 +220,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/js/video.js?");
+eval("// import jquery from 'jquery';\n// window.jQuery = jquery;\n// require(\"@fancyapps/fancybox\");\n// jquery(function($){\n//     $('.js-play-video').click( function(e){\n//         e.preventDefault();\n//         var $this = $(this);\n//         var $frame = $('.b-video-frame');\n//         var videoOpts = '?autoplay=1' + '&modestbranding=0' + '&controls=1' + '&showinfo=0' +'&rel=0';\n//         var video = 'https://www.youtube.com/embed/'+ $this.data('video') + videoOpts;\n//         $frame.attr('src', video);\n//         $frame.addClass('is-active');\n//     } );\n// });\n\n//# sourceURL=webpack:///./src/js/video.js?");
 
 /***/ }),
 

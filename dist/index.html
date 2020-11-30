@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css?cache=a5">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
+    <!-- <link  href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="/path/to/jquery.fancybox.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
   <header class="b-header is-active row">
@@ -54,10 +56,10 @@
             <div class="b-main__action_video b-main__video">
                 <div class="b-video">
     <span class="b-video__desc">Смотреть видео <br>об ICOMPLECT</span>
-    <button class="b-video__button ui-btn ui-btn_play">
+    <a class="b-video__button ui-btn ui-btn_play data-fancybox" data-fancybox data-video="FWG0El6UNKo" href="https://www.youtube.com/watch?v=FWG0El6UNKo">
         <span class="rounds"></span>
         <i class="icon icon_play"></i>
-    </button>
+    </a>
 </div>
             </div>
         </div>
@@ -256,7 +258,10 @@
 
 
 
+  {# <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> #}
   <script src="/js/vendors~main.bundle.js?cache=a3"></script>
+  
+  {# <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> #}
   <script src="/js/bundle.js?cache=a4" ></script>
 </body>
 </html>
