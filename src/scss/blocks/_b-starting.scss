@@ -2,10 +2,36 @@
     background: $cGrey url(../../images/b-starting-bg.png) no-repeat;
     background-position: center bottom;
     // background-size: 100%;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: calc( 970px + 50vw - 735px );
+        background-color: rgba(0,0,0, 0.05);
+        transform: skewX( $skewX );
+        left: calc( 735px - 50vw + 43px );
+        
+        @media (max-width: 1700px){
+            left: calc( -1000px - 19.3vw );
+            width: 2000px;
+        }
+        @media (max-width: 1300px){
+            left: calc( -1000px - 38.3vw );
+            width: 2000px;
+        }
+        @media (max-width: 1000px){
+            display: none;
+        }
+
+    }
 
     &__cnt {
         padding-top: 110px;
         padding-bottom: 155px;
+        position: relative;
+        z-index: 1;
         
         @media (max-width: 1000px){
             padding-top: 70px;
