@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iComplect</title>
     <link rel="icon" href="/images/favicon.gif" type="image/png">
-    <link rel="stylesheet" href="/css/style.css?cache=a8">
+    <link rel="stylesheet" href="/css/style.css?cache=b1">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
@@ -14,7 +14,7 @@
   <header class="b-header is-active row">
     <div class="b-header__cnt cnt">
         <a href="/" class="b-header__logo-link">
-            <img src="/images/logo.png" alt="" class="b-header__logo">
+            <img src="/images/logo.jpg" alt="" class="b-header__logo">
         </a>
 
         <nav class="b-header__nav b-nav">
@@ -54,12 +54,13 @@
             <a href="https://icomplect.com/registration" target="_blank" class="b-main__action_begin ui-btn ui-btn_primary ui-btn_huge songer">Начать использовать</a>
             <div class="b-main__action_video b-main__video">
                 <div class="b-video">
-    <span class="b-video__desc">Смотреть видео <br>об ICOMPLECT</span>
+    <span class="b-video__desc">Смотреть видео <br>об iComplect</span>
     <a class="b-video__button ui-btn ui-btn_play data-fancybox" data-fancybox data-video="FWG0El6UNKo" href="https://www.youtube.com/watch?v=FWG0El6UNKo">
         <span class="rounds"></span>
         <i class="icon icon_play"></i>
     </a>
 </div>
+
             </div>
         </div>
     </div>
@@ -145,15 +146,16 @@
                         </a>
                         <a href="#" class="b-starting-step b-starting-step_2">
                             <span class="b-starting-step__title">Шаг 02</span>
-                            <span class="b-starting-step__desc">Предложи узлы и запчасти <br>рынку (от одной единицы <br>до большого перечня)</span>
+                            <span class="b-starting-step__desc">
+                                Изучи цены и наличие представленных на сайте <br>ж/д узлов и деталей (с помощью фильтра)</span>
                         </a>
                         <a href="#" class="b-starting-step b-starting-step_3">
                             <span class="b-starting-step__title">Шаг 03</span>
-                            <span class="b-starting-step__desc">Начни торговать (продай <br>с любого из складов)</span>
+                            <span class="b-starting-step__desc">Оформи Заказ на сайте <br>на нужном складе</span>
                         </a>
                         <a href="#" class="b-starting-step b-starting-step_4">
                             <span class="b-starting-step__title">Шаг 04</span>
-                            <span class="b-starting-step__desc">Управляй своими складскими <br>запасами (онлайн мониторинг)</span>
+                            <span class="b-starting-step__desc">Обменивайся документами с Продавцом <br>(ООО «ЦТП Комплект») <br>и отслеживай этапы сделки в <br>Личном кабинете</span>
                         </a>
                         </div>
                 </div>
@@ -166,7 +168,7 @@
         <h2 class="b-howto__title">Как работать с маркетплейсом? </h2>
 
         <div class="b-howto__navbar">
-            <a href="#" class="b-howto-nav-link is-active js-tab" data-target-tab="how-to-tab-1">
+            <a href="#" class="b-howto-nav-link js-tab is-active" data-target-tab="how-to-tab-1">
                 <span class="b-howto-nav-link__num">01</span>
                 <span class="b-howto-nav-link__text">Карта</span>
             </a>
@@ -191,40 +193,61 @@
         <div class="b-howto__content">
             <div class="js-tab-content is-active" id="how-to-tab-1">
                 <div class="b-howto-cont b-howto-cont_map">
-                    <div class="text pt-1-5e">
-                        <h4 class="mb-1e">Функционал клиента <br>«Карта»</h4>
-                        <p>Товарищи! укрепление и развитие структуры позволяет оценить значение существенных финансовых и административных условий. Таким образом сложившаяся структура организации способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов).</p>
-                    </div>
-                    <div class="map">
-                        <div id="map"></div>
-                    </div>
-                </div>
+    <div class="text pt-0-5e">
+        <h4 class="mb-1e">Функционал клиента <br>«Карта»</h4>
+        <p>В каталоге iComplect на карте представлены все предложения узлов и деталей опубликованные нашими зарегистрированными пользователями в виде «кружочкков» (привязанных к реальным местам хранения), цифровым обозначением (соответствующему количеству деталей на конкретном складе) и цветной окантовкой (градация цвета которой зависят от кол-ва деталей на том или ином складе), также при наведении курсора на определенную позицию можно увидеть краткую информацию: название места хранения (склада, депо), наименование группы деталей и количество по каждой группе.</p>
+    </div>
+    <div class="map">
+        <div id="map"></div>
+    </div>
+</div>
             </div>
-
-            <div class="js-tab-content" id="how-to-tab-2">
+            <div class="js-tab-content " id="how-to-tab-2">
                 <div class="b-howto-cont b-howto-cont_map">
-                    <div class="text pt-1-5e">
-                        <h4 class="mb-1e">Функционал клиента <br>«Карта»</h4>
-                        <p>Товарищи! укрепление и развитие структуры позволяет оценить значение существенных финансовых и административных условий. Таким образом сложившаяся структура организации способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов).</p>
-                    </div>
-                    <div class="map"><img src="/images/temp_map.jpg" alt=""></div>
-                </div>
+    <div class="cnt p-0">
+        <div class="pb-1e pt-0-5e gr-12-md gr-3-xl gr-2-xxl">
+            <h4 class="mb-1e">«Поиск с фильтром»</h4>
+            <p>Отфильтровать необходимые категории узлов и деталей можно различными способами: набрав запрос в строке «Поиск товаров», например: Колесные пары, Литые детали…. или выбрав необходимую категорию слева в верхней части панели фильтра. Более тонкие настройки фильтра можно выбрать слева в нижней части панели фильтра, которые сработают после нажатия кнопки «Показать». Также можно переключаться между режимами визуализации деталей на карте или в каталоге нажав соответствующую кнопку справа от кнопки «Поиск» , где также доступна кнопка «XLS» для выгрузки деталей доступных к продаже на сайте в формате Excel.</p>
+        </div>
+        <div class="fg-1"><img class="gr-12-xs" src="/images/b-howto-img-1.jpg" alt=""></div>
+    </div>
+</div>
             </div>
             <div class="js-tab-content" id="how-to-tab-3">
-                <div style="width: 100%; height: 200px; background: rgba(0,0,0, 0.6)"></div>
+                <div class="b-howto-cont b-howto-cont_map">
+    <div class="cnt p-0">
+        <div class="pb-1e pt-0-5e gr-12-md gr-3-xl gr-3-xxl">
+            <h4 class="mb-1e">«Мои запчасти»</h4>
+            <p>Для зарегистрированных пользователей доступен раздел «Мои запчасти», в интерфейсе которого доступен функционал размещения предложений узлов и деталей к продаже на сайте. Через кнопку «Добавить запчасть» достаточно просто размещать единичные предложения. Особое внимание стоит обратить на то, что к продаже через iComplect могут быть приняты только детали с определенными номерами, размещение к продаже лотов не принимается. В случае необходимости загрузки информации о продаже большого количества деталей необходимо направить файл с пономерным перечнем позиций на емэйл info@icomplect.com в формате Excel  и максимально подробной информацией для загрузки деталей Менеджером площадки.</p>
+        </div>
+        <div class="fg-1 flex to-right"><img class="" src="/images/b-howto-img-2.jpg" alt=""></div>
+
+    </div>
+</div>
             </div>
             <div class="js-tab-content" id="how-to-tab-4">
-                <div style="width: 100%; height: 200px; background: rgba(0,0,0, 0.4)"></div>
+                <div class="b-howto-cont b-howto-cont_map">
+    <div class="cnt no-wrap-lg wrap p-0">
+        <div class="pb-1e pt-0-5e gr-12-xs gr-4-lg gr-3-xl">
+            <h4 class="mb-1e">«Мои заказы»</h4>
+            <p>После оформления или поступления Заказа, у зарегистрированных пользователей в разделе «Мои заказы» появляется информация о Заказе, перейдя в который можно скачать предзаполенные документы по сделке, обмениваться подписанными документами (Спецификация на поставку, Счет, УПД и т.д.) и отслеживать этапы сделки. В случае перехода на следующий этап сделки или оформления очередного документа контрагентом, пользователь получает емэйл-уведомление.</p>
+        </div>
+        <div class="fg-1 flex gr-12-xs gr-8-lg gr-9-xl to-right-md to-center-xs"><img class="" src="/images/b-howto-img-3.jpg" alt=""></div>
+    </div>
+</div>
             </div>
             <div class="js-tab-content" id="how-to-tab-5">
-                <div style="width: 100%; height: 200px; background: rgba(0,0,0, 0.2)"></div>
+                <div class="b-howto-cont b-howto-cont_map">
+    <div class="cnt no-wrap-lg wrap p-0">
+        <div class="pb-1e pt-0-5e gr-12-xs gr-4-lg gr-3-xl">
+            <h4 class="mb-1e">«Мои ремонты»</h4>
+            <p>Зарегистрированным пользователям в разделе «Мои ремонты» доступна  аналитика: сопоставление деталей Пользователя и ремонтов Подвижного состава.</p>
+                <p>После загрузки своих деталей необходимо в табличном представлении заполнить следующие поля: Депо, Вид ремонта, Количество, Период ремонта. Значок «Мои ремонты» отображаются на карте в виде иконки флага с количеством ремонтов на данном складе. Если цвет флага ремонтов и цвет кружка склада отличаются по цвету, то на эту точку ремонта следует обратить особое внимание: либо переизбыток деталей, либо нехватка деталей.</p>
+        </div>
+        <div class="fg-1 flex gr-12-xs gr-8-lg gr-9-xl to-right-md to-center-xs"><img class="" src="/images/b-howto-img-4.jpg" alt=""></div>
+    </div>
+</div>
             </div>
-            
-            <!--
-            <div class="b-howto__item b-howto__item_"></div>
-            <div class="b-howto__item b-howto__item_"></div>
-            <div class="b-howto__item b-howto__item_"></div>
-            -->
         </div>
     </div>
 </section>
@@ -232,20 +255,18 @@
     <div class="b-contacts__cnt cnt">
         <div class="b-contacts__header">
             <h2 class="b-contacts__title">Контакты</h2>
-            <span class="b-contacts__address"><i class="icon icon_address"></i>117342, Москва город, улица Профсоюзная, <br>
-                дом 65, корпус 1, Эт 18 пом XLIV ком 5.06</span>
+            <span class="b-contacts__address"><i class="icon icon_address"></i>117342, Москва, улица Профсоюзная, <br>дом 65, корпус 1, Эт 18 пом XLIV ком 5.06</span>
             <a href="tel:+74952490117" class="b-contacts__phone"><i class="icon icon_phone"></i>+7 (495) 249-01-17</a>
             <div class="b-contacts__requisites">
                 <span>ООО "ЦТП Комплект" <br>
                     ОГРН: 5187746014143 <br>
-                    ИНН: 7728455599 <br></span>
-                <span>
+                    ИНН: 7728455599 <br>
                     КПП: 772801001 <br>ОКПО: 35053659
                 </span>
             </div>
         </div>
         <div class="b-contacts__map">
-            <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A91277b548a151c7e933c6b0ae8cc122897b0b324a5a57f0ddf74e3a4bed34bdf&amp;source=constructor" width="100%" height="380" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A91277b548a151c7e933c6b0ae8cc122897b0b324a5a57f0ddf74e3a4bed34bdf&amp;source=constructor" width="100%" height="380" frameborder="0"></iframe>
         </div>
         <div class="b-contacts__footer">
             <a data-fancybox-type="iframe" href="/images/policy.pdf" class="b-contacts-footer-link b-contacts-footer-link_policy js-fancy-pdf">Политика конфиденциальности</a>
@@ -253,12 +274,9 @@
             <span href="#" class="b-contacts-footer-link b-contacts-footer-link_copyright">© ICOMPLECT 2020, все права защищены</span>
         </div>
     </div>
-</section>
-
-
-
-  
-  <script src="/js/vendors~main.bundle.js?cache=a5"></script>
-  <script src="/js/bundle.js?cache=a5" ></script>
+</section>  
+  <script src="/js/vendors~main.bundle.js?cache=a8"></script>
+  <!-- <script src="/js/1.bundle.js?cache=a5" ></script> -->
+  <script src="/js/bundle.js?cache=a7" ></script>
 </body>
 </html>

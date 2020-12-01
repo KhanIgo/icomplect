@@ -1,5 +1,11 @@
 .b-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background-color: white;
+
+
   
   &:after{
     content: '';
@@ -10,10 +16,10 @@
     right: 0;
     top: 0;
     z-index: -1;
-    @media (max-width: 780px){ display: none; }
+    @media (max-width: 860px){ display: none; }
   }
 
-  @media (max-width: 780px){
+  @media (max-width: 860px){
      position: fixed;
      z-index: 5;
      background-color: white;
@@ -27,10 +33,11 @@
   &__logo-link {
     padding: 25px 0;
     margin-right: 55px;
+    padding-right: 40px;
     @media (max-width: 1450px){
       margin-right: 15px;
     }
-    @media (max-width: 780px){
+    @media (max-width: 860px){
       margin: 0 auto;
       padding: 15px 0;
     }
@@ -39,6 +46,7 @@
   }
   &__logo{
     display: block;
+    width: 210px;
   }
 
   &__nav{
@@ -56,9 +64,9 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     transition: 350ms ease-in-out;
-    z-index: 5;
+    z-index: 15;
 
-    @media (max-width: 1150px) and (min-width: 780px){ 
+    @media (max-width: 1200px) and (min-width: 860px){ 
       position: fixed;
       display: flex;
       right: -3%;
@@ -67,7 +75,7 @@
       transform: skewX($skewX) translateX(100%);
       &.is-active{ transform: skewX($skewX) translateX(0); }
     }
-    @media (max-width: 780px){
+    @media (max-width: 860px){
       position: fixed;
       bottom: 0;
       left: 0;
@@ -85,7 +93,8 @@
     align-items: center;
     text-decoration: none;
     transform: skewX($skewX);
-    padding: 0 47px;
+    // padding: 0 47px;
+    padding: 0 30px;
     transition: 350ms ease-in-out;
     will-change: color background-color;
     >span{
@@ -99,7 +108,7 @@
       padding: 20px 40px;
       >span{ transform: skewX(-$skewX); }
     }
-    @media (max-width: 780px){
+    @media (max-width: 860px){
       width: 50%;
       padding: 10px;
       height: 50px;
@@ -132,10 +141,10 @@
     align-items: center;
     z-index: 5;
     justify-content: center;
-    @media (min-width: 1150px){
+    @media (min-width: 1200px){
       display: none;
     }
-    @media (max-width: 780px){
+    @media (max-width: 860px){
       position: fixed;
       right: 0;
       bottom: 0;

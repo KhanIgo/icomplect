@@ -9,13 +9,15 @@ body{
     overflow-x: hidden;
     font-family: 'Proxima Nova';
     font-size: 16px;
+    padding-top: 79px;
     // @media (max-width: 1450px){
     //     width: 1450px;
     //     >.row{
     //         overflow: hidden;
     //     }
-    // }
-    @media (max-width: 780px){
+    // }pt79    
+    @media (max-width: 860px){
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 }

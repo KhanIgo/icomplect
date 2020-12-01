@@ -74,6 +74,9 @@
             position: absolute;
             width: 9.2em;
             height: 9.2em;
+            will-change: opacity;
+            animation: pulse 1.5s ease infinite ;
+            // animation-delay: 0.5s;
 
             &:before, &:after{
                 content: '';
@@ -84,8 +87,11 @@
                 width: 11.8em;
                 height: 11.8em;
                 background-color: transparentize($cOrange, 0.83);
-                left: -1.3em;
-                top: -1.3em;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                will-change: opacity, font-size;
+                animation: pulse 1.5s ease infinite ;
             }
             &:after{
                 background-color: white;
@@ -95,9 +101,14 @@
                 @include mask-rep(no-repeat);
                 width: 5.9em;
                 height: 11.8em;
-                left: -1.3em;
-                top: -1.3em;
+                left: 0;
+                top: 0;
                 z-index: -1;
+                will-change: opacity, font-size;
+                transform: translateX(-22%) translateY(-11%);
+                animation: pulse2 1.5s ease infinite ;
+
+                // display: none;
             }
         }
         
