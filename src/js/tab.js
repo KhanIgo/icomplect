@@ -18,7 +18,4 @@ jquery( function($){
         var targethHeight = $target.find('>div').outerHeight();
         $target.animate({ height: targethHeight+'px'}, time);
     } );
-
-    
-
 } );

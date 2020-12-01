@@ -20,7 +20,7 @@
     &__header {
         width: 100%;
         display: flex;
-        
+        justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
     }
@@ -35,7 +35,7 @@
 
     &__address {
         position: relative;
-        margin-left: 7.5%;
+        // margin-left: 7.5%;
         i{
             position: absolute;
             font-size: 1.3em;
@@ -54,7 +54,7 @@
 
     &__phone {
         text-decoration: none;
-        margin-left: 7.5%;
+        // margin-left: 7.5%;
         font-size: 1.375em;
         font-weight: 500;
         i{
@@ -74,12 +74,12 @@
 
     &__requisites {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 335px;
-        margin-left: auto;
+        justify-content: flex-end;
+        // width: 100%;
+        // max-width: 335px;
+        // margin-left: auto;
         font-size: 0.87em;
-        font-weight: 30;
+        font-weight: 300;
         @media (max-width: 1000px){
             margin-top: 15px;
             margin-left: 0;

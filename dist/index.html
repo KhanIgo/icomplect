@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iComplect</title>
     <link rel="icon" href="/images/favicon.gif" type="image/png">
-    <link rel="stylesheet" href="/css/style.css?cache=b1">
+    <link rel="stylesheet" href="/css/style.css?cache=b2">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
@@ -105,11 +105,12 @@
         <div class="b-starting__header">
             <h2 class="b-starting__title">Как начать работать?</h2>
             <div class="b-starting__toggles songer">
-                <a href="#" class="b-starting__toggle b-starting__toggle_seller  js-tab is-active" data-target-tab="tab-content-seller">Для продавца</a>
-                <a href="#" class="b-starting__toggle b-starting__toggle_customer js-tab" data-target-tab="tab-content-customer">Для покупателя</a>
+                <a href="#" class="b-starting__toggle b-starting__toggle_seller  js-tab  js-starting-toggle is-active" data-target-tab="tab-content-seller">Для продавца</a>
+                <a href="#" class="b-starting__toggle b-starting__toggle_customer js-tab js-starting-toggle " data-target-tab="tab-content-customer">Для покупателя</a>
             </div>
             <div class="b-starting__offer songer">
-                <a href="#" class="ui-btn ui-btn_blue-border ui-btn_huge-2">Ознакомиться с офертой</a>
+                <a data-fancybox-type="iframe" href="https://icomplect.com/media/medialibrary/2020/08/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D0%B0_%D0%BE_%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B5_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F_%D0%BE%D1%82_07.08.2020.pdf" class="ui-btn ui-btn_blue-border ui-btn_huge-2  b-starting__offer-link js-fancy-pdf">Ознакомиться с офертой</a>
+                <a data-fancybox-type="iframe" href="https://icomplect.com/media/medialibrary/2020/08/%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D0%B0_%D0%BE_%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B5_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F_%D0%BE%D1%82_07.08.2020.pdf" class="ui-btn ui-btn_blue-border ui-btn_huge-2 b-starting__offer-link  hidden js-fancy-pdf">Ознакомиться с офертой</a>
             </div>
         </div>
 
@@ -193,7 +194,7 @@
         <div class="b-howto__content">
             <div class="js-tab-content is-active" id="how-to-tab-1">
                 <div class="b-howto-cont b-howto-cont_map">
-    <div class="text pt-0-5e">
+    <div class="text fs-0 pt-0-5e">
         <h4 class="mb-1e">Функционал клиента <br>«Карта»</h4>
         <p>В каталоге iComplect на карте представлены все предложения узлов и деталей опубликованные нашими зарегистрированными пользователями в виде «кружочкков» (привязанных к реальным местам хранения), цифровым обозначением (соответствующему количеству деталей на конкретном складе) и цветной окантовкой (градация цвета которой зависят от кол-ва деталей на том или ином складе), также при наведении курсора на определенную позицию можно увидеть краткую информацию: название места хранения (склада, депо), наименование группы деталей и количество по каждой группе.</p>
     </div>
@@ -215,12 +216,12 @@
             </div>
             <div class="js-tab-content" id="how-to-tab-3">
                 <div class="b-howto-cont b-howto-cont_map">
-    <div class="cnt p-0">
-        <div class="pb-1e pt-0-5e gr-12-md gr-3-xl gr-3-xxl">
+    <div class="cnt no-wrap-lg wrap p-0">
+        <div class="pb-1e pt-0-5e gr-12-xs gr-4-lg gr-3-xl">
             <h4 class="mb-1e">«Мои запчасти»</h4>
             <p>Для зарегистрированных пользователей доступен раздел «Мои запчасти», в интерфейсе которого доступен функционал размещения предложений узлов и деталей к продаже на сайте. Через кнопку «Добавить запчасть» достаточно просто размещать единичные предложения. Особое внимание стоит обратить на то, что к продаже через iComplect могут быть приняты только детали с определенными номерами, размещение к продаже лотов не принимается. В случае необходимости загрузки информации о продаже большого количества деталей необходимо направить файл с пономерным перечнем позиций на емэйл info@icomplect.com в формате Excel  и максимально подробной информацией для загрузки деталей Менеджером площадки.</p>
         </div>
-        <div class="fg-1 flex to-right"><img class="" src="/images/b-howto-img-2.jpg" alt=""></div>
+        <div class="fg-1 flex gr-12-xs gr-8-lg gr-9-xl to-right-md to-center-xs"><img class="" src="/images/b-howto-img-2.jpg" alt=""></div>
 
     </div>
 </div>
@@ -275,8 +276,8 @@
         </div>
     </div>
 </section>  
-  <script src="/js/vendors~main.bundle.js?cache=a8"></script>
+  <script src="/js/vendors~main.bundle.js?cache=a9"></script>
   <!-- <script src="/js/1.bundle.js?cache=a5" ></script> -->
-  <script src="/js/bundle.js?cache=a7" ></script>
+  <script src="/js/bundle.js?cache=a9" ></script>
 </body>
 </html>

@@ -1,11 +1,14 @@
 import jquery from 'jquery';
+window.jQuery = jquery;
+
 require('./ham');
 require('./nav-scroll');
 require('./tab')
 require('./map')
 require('./video')
-window.jQuery = jquery;
+require('./starting')
 require("@fancyapps/fancybox");
+
 
 jquery(function($) {
     $(".js-fancy-pdf").fancybox({
